@@ -1,7 +1,11 @@
 class Api::V1::GamesController < ApplicationController
 
+  def index
+    @games = Game.all
+    render json: @games
+  end
+
   def create
-    byebug
     @game = Game.create(game_params)
     render json: @game
   end
