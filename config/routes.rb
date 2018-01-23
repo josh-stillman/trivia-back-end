@@ -6,6 +6,7 @@ Rails.application.routes.draw do
         resources :users
         resources :games, only: [:index, :show, :create]
         resources :rounds, only: [:index, :show, :create]
+        get 'leaderboard', to: 'leaderboard#index'
       end
     end
 
