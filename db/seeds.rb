@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Round.destroy_all
+Game.destroy_all
 
  bob = User.create(name: "bob", bio: "for the love of the game", image: "")
  bob = User.create(name: "neil", bio: "it's neil time", image: "")

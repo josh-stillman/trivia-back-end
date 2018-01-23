@@ -20,7 +20,7 @@ class User < ApplicationRecord
         total = sorted.inject(0) do |sum, round|
           sum + round[1]
         end
-        [self.name, total, sorted.reverse[0][0]]
+        [self.name, total, sorted == [] ? "none": sorted.reverse[0][0]]
     end
 
     def self.leaderboard
