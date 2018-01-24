@@ -7,7 +7,7 @@ class Api::V1::UsersController < ApplicationController
     #
     # ranked by total score
 end
-
+#
 
   def show
     @user = User.find(params[:id])
