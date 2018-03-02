@@ -1,5 +1,5 @@
 require 'rest-client'
-require 'JSON'
+# require 'JSON'
 class Api::V1::QuestionsController < ApplicationController
 
 
