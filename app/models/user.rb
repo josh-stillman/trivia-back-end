@@ -7,6 +7,10 @@ class User < ApplicationRecord
     Game.where("user1_id = ? OR user2_id = ?", self.id, self.id)
   end
 
+  def rounds
+    self.games.map{|game| game.rounds}
+  end
+
   def get_leaderboard_entry
       usercategories = Hash.new(0)
       self.rounds.each do |round|
