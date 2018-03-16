@@ -13,7 +13,7 @@ class User < ApplicationRecord
         if round.user1_id === self.id
           usercategories[round.category] += round.user1_score
         else
-          usercategories[round.category] += round.user1_score
+          usercategories[round.category] += round.user2_score
         end
       end
         sorted = usercategories.sort_by {|k, v| v}
