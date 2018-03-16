@@ -8,7 +8,7 @@ class User < ApplicationRecord
   end
 
   def rounds
-    self.games.map{|game| game.rounds}
+    self.games.map{|game| game.rounds}.flatten
   end
 
   def get_leaderboard_entry
