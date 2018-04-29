@@ -13,5 +13,7 @@ A game consists of three rounds of questions, each in a different, randomly sele
 
 Check out the demo hosted on Github Pages: https://bmcilhenny.github.io/trivia-front-end/
 
+Created in collaboration with @bmcilhenny.
+
 ## Contributor's Guide
 Please submit any bugs you find or any feature suggestions through the repo.
